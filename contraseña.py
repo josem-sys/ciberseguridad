@@ -1,6 +1,6 @@
 from utilidades import comprobar_numero #llamar la función de utilidades.py
 def comprobar_longitud(contrasena):
-    return len(contrasena) >= 10 #devuelve automaticamente true o false
+    return len(contrasena) >= 12 #devuelve automaticamente true o false
 
 def comprobar_mayuscula(contrasena):
     return any(c.isupper() for c in contrasena)
@@ -9,6 +9,10 @@ contrasena = "Hola1234"
 print(contrasena)
 print("Longitud válida de Hola1234:", comprobar_longitud(contrasena))
 print("Longitud válida de Hola:", comprobar_longitud("Hola"))
+print("Probar 10:", comprobar_longitud("1234567890"))
+print("Probar 11:", comprobar_longitud("12345678901"))
+print("Probar 12:", comprobar_longitud("123456789012"))
+
 
 print("¿Tiene números la contraseña?:", comprobar_numero(contrasena))
 print("¿Tiene números 'Hola'?:", comprobar_numero("Hola"))
