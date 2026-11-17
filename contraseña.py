@@ -1,6 +1,6 @@
 from utilidades import comprobar_numero #llamar la función de utilidades.py
 def comprobar_longitud(contrasena):
-    return len(contrasena) >= 8 #devuelve automaticamente true o false
+    return len(contrasena) >= 10 #devuelve automaticamente true o false
 
 def comprobar_mayuscula(contrasena):
     return any(c.isupper() for c in contrasena)
